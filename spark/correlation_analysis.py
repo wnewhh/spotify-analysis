@@ -22,7 +22,7 @@ print(f"Correlation between total streams and max weeks: {corr_value}")
 with open("output/correlation_result.txt", "w") as f:
     f.write(f"Pearson correlation: {corr_value}\n")
 
-# 保存聚合数据用于可视化（可选）
+# 保存聚合数据用于可视化
 agg_df.toPandas().to_csv("output/song_weeks_streams.csv", index=False)
 
 spark.stop()
