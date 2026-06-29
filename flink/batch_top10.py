@@ -1,6 +1,6 @@
 from pyflink.table import EnvironmentSettings, TableEnvironment
 import pandas as pd
-# 使用绝对路径
+# 使用相对路径
 LOCAL_PATH = "file:///spotify-analysis/data/spotify.csv"
 
 settings = EnvironmentSettings.in_batch_mode()
